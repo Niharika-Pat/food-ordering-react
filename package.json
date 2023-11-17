@@ -1,0 +1,32 @@
+{
+  "name": "namastereact2",
+  "version": "1.0.0",
+  "description": "Mini project in React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niharika-Pat/food-ordering-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Niharika Patlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niharika-Pat/food-ordering-react/issues"
+  },
+  "homepage": "https://github.com/Niharika-Pat/food-ordering-react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
+}
