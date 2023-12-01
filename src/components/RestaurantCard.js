@@ -13,6 +13,7 @@ const RestaurantCard = (props) => {
       <h3>{resData.name}</h3>
       <h4>{resData.cuisines.join(", ")}</h4>
       <h4>{resData.costForTwo}</h4>
+      <h4>{resData.sla.slaString}</h4>
     </div>
   );
 };

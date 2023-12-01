@@ -1,5 +1,5 @@
 export const styleCard = {
-  backgroundColor: "yellow",
+  backgroundColor: "#f0f0f0",
 };
 
 export const LOGO_URL =
@@ -7,3 +7,6 @@ export const LOGO_URL =
 
 export const RES_CARD_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/";
+
+export const RES_INFO =
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.4594965&lng=77.0266383&restaurantId=";
