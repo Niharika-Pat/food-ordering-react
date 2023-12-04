@@ -4,9 +4,9 @@ const RestaurantCard = (props) => {
   const { resData } = props;
 
   return (
-    <div className="res-card" style={styleCard}>
+    <div className="m-4  p-4 w-[250px] rounded-lg bg-gray-50 hover:bg-gray-100">
       <img
-        className="res-logo"
+        className="rounded-lg"
         alt="res-logo"
         src={RES_CARD_URL + resData.cloudinaryImageId}
       />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -9,6 +9,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { RestaurantMenu } from "./components/RestaurantMenu";
 
 // React Element
+const Grocery = lazy(() => {
+  import("./components/Grocery");
+});
 
 const AppLayout = () => {
   return (
