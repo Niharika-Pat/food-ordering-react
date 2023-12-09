@@ -1,7 +1,10 @@
-import { RES_CARD_URL, styleCard } from "../utils/constants";
+import { RES_CARD_URL } from "../utils/constants";
+import UserContext from "../utils/UserContext";
+import { useContext } from "react";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="m-4  p-4 w-[250px] rounded-lg bg-gray-50 hover:bg-gray-100">
@@ -14,8 +17,23 @@ const RestaurantCard = (props) => {
       <h4>{resData.cuisines.join(", ")}</h4>
       <h4>{resData.costForTwo}</h4>
       <h4>{resData.sla.slaString}</h4>
+      <h4>{loggedInUser}</h4>
     </div>
   );
+};
+
+// return Higher order component
+export const promotedLabel = (RestaurantCard) => {
+  return () => {
+    return (
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">
+          Promoted
+        </label>
+        <RestaurantCard />
+      </div>
+    );
+  };
 };
 
 export default RestaurantCard;
